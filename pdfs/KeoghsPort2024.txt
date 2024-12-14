@@ -1,0 +1,16 @@
+2024-12-14 13:51	Ryan signs in
+2024-12-14 13:51	Manifest SilverQueen.txt is loaded. There are 4 containers on the ship
+2024-12-14 13:53	Move Rations for US Army from (1, 1) to (1, 0), Cost: 1 minutes
+2024-12-14 13:53	Offloaded Catfish to truck, Cost: 11 minutes
+2024-12-14 13:53	Loaded Nat from truck to ship, Cost: 8 minutes
+2024-12-14 13:53	Offloaded Batons to truck, Cost: 13 minutes
+2024-12-14 13:55	There seems to be a dent in Batons container.
+2024-12-14 13:55	Finished a cycle. Manifest SilverQueenOUTBOUND.txt was written to desktop, and a reminder pop-up to operator to send file was displayed
+2024-12-14 13:56	Ryan signs out
+2024-12-14 13:56	Anthony signs in
+2024-12-14 13:56	Manifest SilverQueen.txt is loaded. There are 4 containers on the ship
+2024-12-14 13:57	Move Rations for US Army from [1, 1] to [1, 0], Cost: 1 minutes
+2024-12-14 13:57	Move Catfish from [0, 1] to [0, 6], Cost: 7 minutes
+2024-12-14 13:58	Anthony signs out
+2024-12-14 13:58	Kya signs in
+2024-12-14 13:58	Finished a cycle. Manifest SilverQueenOUTBOUND.txt was written to desktop, and a reminder pop-up to operator to send file was displayed
