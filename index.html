@@ -14,7 +14,7 @@
             padding: 20px;
         }
         .header {
-            font-weight: bold;
+            font-weight: normal;
             margin-bottom: 20px;
         }
         .team-members {
@@ -31,25 +31,70 @@
             text-decoration: underline;
         }
     </style>
+    <title>List with Parentheses</title>
+    <style>
+        ol {
+            list-style: none; 
+            padding-left: 0;
+        }
+
+        ol li::before {
+            content: counter(item) ") "; 
+            counter-increment: item; 
+        }
+
+        ol {
+            counter-reset: item; 
+        }
+
+        ol ol {
+            list-style-type: disc;  
+            padding-left: 15px;
+        }
+        ol ol li::before {
+            content: "";
+        }
+    </style>
+    <style>
+        ol li.extra-space {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">Team DockerTechCo.</div>
+    <div class="header" style="display: flex; justify-content: space-between; align-items: center; font-weight: normal;">
+        <span>Team DockerTechCo.</span>
+        <span style="margin: 0 auto; text-align: center; flex-grow: 1;"> (This webpage was last edited on 12-13-2024)</span>
+    </div>
     <div class="team-members">
-        Melanie Gomez-Bustos, <a href="mailto:mgome175@ucr.edu">mgome175@ucr.edu</a><br>
-        Ryan Nguyen, <a href="mailto:rnguy135@ucr.edu">rnguy135@ucr.edu</a><br>
-        Aarav Sane, <a href="mailto:asane003@ucr.edu">asane003@ucr.edu</a><br>
-        Aadil Umar, <a href="mailto:aumar004@ucr.edu">aumar004@ucr.edu</a><br>
-        Chris Ullman, <a href="mailto:cullm001@ucr.edu">cullm001@ucr.edu</a>
+        <ul style="list-style-type: none;">
+            <li>Melanie Gomez-Bustos, <a href="mailto:mgome175@ucr.edu">mgome175@ucr.edu</a></li>
+            <li>Ryan Nguyen, <a href="mailto:rnguy135@ucr.edu">rnguy135@ucr.edu</a></li>
+            <li>Aarav Sane, <a href="mailto:asane003@ucr.edu">asane003@ucr.edu</a></li>
+            <li>Aadil Umar, <a href="mailto:aumar004@ucr.edu">aumar004@ucr.edu</a></li>
+            <li>Chris Ullman, <a href="mailto:cullm001@ucr.edu">cullm001@ucr.edu</a></li>
+        </ul>
     </div>
     <ol>
         <li>This file <a href="pdfs/DockerTechCo..pdf">DockerTechCo..pdf</a> contains evidence of our efforts to plan our elicitation of requirements from Mr. Keogh, and any notes taken during the elicitation.</li>
         <li>This file <a href="pdfs/DockerTechCo.Fall2024_Attempt1.pdf">DockerTechCo.ProjectPitchORIGINAL.pdf</a> contains our original pitch to Mr. Keogh, which was delivered on October 29<sup>th</sup>, 2024, at 5:00pm.</li>
         <li>This file <a href="pdfs/[REVISED]DockerTechCo.Fall2024_Attempt1.pdf">DockerTechzCo.PitchCORRECTED.pdf</a> contains a new version of the pitch, with all the corrections, amendments, and deletions suggested by Mr. Keogh (and/or Dr. Keogh).</li>
         <li>This file <a href="pdfs/DockerTechCo.Design Mockup.pdf">DockerTechCo.Design.pdf</a> shows evidence of our efforts to design our software.</li>
-        <li>This file <a href="#">DockerTechCo.Testing.pdf</a> shows evidence of our efforts to test our software.</li>
+        <li>This file <a href="pdfs/DockerTechCo.Testing.pdf">DockerTechCo.Testing.pdf</a> shows evidence of our efforts to test our software.</li>
         <li>This URL <a href="https://github.com/skyguy-netizen/CS179M-Project">github.com/DockerTechCo.</a> points to a GitHub repository of our code.</li>
         <li>This <a href="#">YouTube video</a> shows our software solving one balance, and one transfer test case (our choices, of the test cases Mr. Keogh gave us).</li>
-        <li>This text file is the <a href="#">KeoghsPort2024.txt</a> log that was created by our software, during the making of the YouTube video in the previous bullet point.</li>
+        <li class = "extra-space">This text file is the <a href="#">KeoghsPort2024.txt</a> log that was created by our software, during the making of the YouTube video in the previous bullet point.</li>
+        <li>We would like to point out the following limitations:</li>
+            <ol>
+                <li>We did not implement seemless recovery from a power outage.</li>
+                <li>We did not implement a buffer to handle cases where there is a large amount of containers on a ship.</li>
+                <li>We did not implement duplicate name checking of containers. The container the operator selects will be the one to be unloaded.</li>
+                <li class = "extra-space">We did not implement input validation for loading. The operator can enter invalid values for the container name or weight.</li>
+            </ol>
+        <li class = "extra-space">Here is some additional items you may find useful in grading the project. As promised in our project pitch, we have provided a <a href="#">training video</a> and <a href= "#">user manual</a>.</li>
+        <li>We would like to acknowledge the following resources that were helpful in completing this project. We watched this <a href= "https://youtu.be/6WruncSoCdI?si=1FDUSxAsd5ze2x33">video</a> and referenced this <a href="https://github.com/ecole-du-web/react-modal"> GitHub repository</a> for guidance on navigating flask and react as this was our first time working with these tools.</li>
+
+        
     </ol>
 </body>
 </html>
